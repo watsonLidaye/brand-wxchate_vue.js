@@ -1,0 +1,61 @@
+.to_top{
+    position: fixed;
+    right: 60px;
+    bottom: 200px;
+    z-index: 100000;
+}
+.top{
+    width: 50px;
+    height: 50px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    text-align: center;
+
+}
+.to_top>.top{
+    background: #d73333;
+}
+.top:first-child>img{
+    width: 22px;
+    height: 22px;
+}
+#top:hover{
+    cursor: pointer;
+}
+.top_hidden{
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    overflow: hidden;
+}
+.transition3{
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.4s ease;
+}
+.to_top_qr{
+    width: 50px;
+    height: 50px;
+    background: #e5e5e5;
+    text-align: center;
+}
+.top_qr{
+    position: absolute;
+    left: -170px;
+    bottom:-50px;
+    width: 150px;
+    height: 150px;
+    background: white;
+    background: url(../images/cooperation29.png) no-repeat top left;
+    background-size:100% 100% ;
+    border: 1px solid #eee ;
+    border-radius: 4px;
+    overflow: hidden;
+    display: none;
+}
+.to_top_qr:hover{
+    cursor: pointer;
+}
+.to_top_qr:hover .top_qr{
+    display: block;
+}
