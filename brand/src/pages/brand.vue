@@ -1,24 +1,17 @@
 <template>
-  <div class="hello">
+  <div class="brand">
     <h1>{{ msg }}</h1>
-        {{index}}
+
   </div>
 </template>
 
 <script>
-import common from '@/js/common.js'
+
 export default {
-  props:['placeholder'],
-  name: 'HelloWorld',
+  name: 'brand',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
-      index:""
-    }
-  },
-  methods:{
-    name(){
-      this.$store.state=2
+      msg: 'Welcome to Your Vue.js brand'
     }
   }
 }
