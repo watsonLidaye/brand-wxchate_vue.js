@@ -1,26 +1,41 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-        {{index}}
-  </div>
+    <div v-if="type==1">
+    <loading :type="type"></loading>
+    </div>
+    <div v-if="type==2">
+      <h1>{{ msg }}</h1>
+      <!-- tabbars -->
+      <div id="tabbar" class="both">
+        <a href="/" class="left">
+          <div>
+            <img src="../../static/image/brand/tabbar/index_checked.png" class="tab_img">
+            <p class="tab_act">首页</p>
+          </div>
+        </a>
+        <a href="/brand" class="left">
+         <img src="../../static/image/brand/tabbar/brand_unchecked.png" class="tab_img">
+         <p class="tab_nocat">招商</p>
+       </a>
+     </div>
+   </div>
+ </div>
 </template>
 
 <script>
-import common from '@/js/common.js'
+import loading from '@/components/loadding'
 export default {
-  props:['placeholder'],
   name: 'HelloWorld',
+  components:{
+    loading,
+  },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      index:""
+      type:"2"
     }
   },
-  methods:{
-    name(){
-      this.$store.state=2
-    }
-  }
+
 }
 </script>
 

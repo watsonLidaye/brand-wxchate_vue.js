@@ -1,18 +1,6 @@
 <template>
   <div id="app">
-    <!-- tabbars -->
-    <div id="tabbar" class="both">
-      <a href="/" class="left">
-        <div>
-          <img src="../static/image/brand/tabbar/index_checked.png" class="tab_img">
-          <p class="tab_act">首页</p>
-        </div>
-      </a>
-      <a href="#/brand" class="left">
-       <img src="../static/image/brand/tabbar/brand_unchecked.png" class="tab_img">
-          <p>招商</p>
-      </a>
-    </div>
+   
     <router-view/>
   </div>
 
@@ -21,7 +9,12 @@
 <script>
 import './js/public.js'
 export default {
-  name: 'app'
+  name: 'app',
+  computed:{
+    tab_index(){
+      return this.$store.state.tab_index
+    }
+  }
 }
 </script>
 
@@ -61,5 +54,8 @@ export default {
 }
 .tab_act{
   color:#ef3939;
+}
+.tab_nocat{
+  color:#333;
 }
 </style>
