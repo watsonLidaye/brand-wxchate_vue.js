@@ -1,6 +1,11 @@
 <template>
   <div class="loading">
-    <div v-if="type==1">1</div>
+    <div v-if="type==1">
+      <div class="loading">
+        <img src="static/image/brand/common/01.gif" class="w_100">
+      </div>
+      
+    </div>
     <div v-if="type==2">2</div>
   </div>
 
@@ -21,6 +26,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.loading{
+  padding-top: 1rem;
+}
 h1, h2 {
   font-weight: normal;
 }
@@ -34,5 +42,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.w_100{
+  width: 7.5rem
 }
 </style>

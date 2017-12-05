@@ -32,9 +32,12 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your brand',
-      type:"2"
+      type:"1"
     }
   },
+  beforeCreate(){
+    setTimeout(()=>{this._data.type=2},3000)
+  }
 
 }
 </script>
