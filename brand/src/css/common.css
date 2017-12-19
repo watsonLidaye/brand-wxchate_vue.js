@@ -88,3 +88,6 @@ a:active{
 	display: block;
 	clear: both;	
 }
+.marginA{
+	margin: 0 auto;
+}

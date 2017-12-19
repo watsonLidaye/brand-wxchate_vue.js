@@ -1,0 +1,57 @@
+.ft30{
+	font-size: .3rem
+}
+.ft42{
+	font-size: .42rem
+}
+.mb40{
+	margin-bottom: .4rem
+}
+.color_33{
+	color: #333;
+}
+.font_bold{
+	font-weight: bold;;
+}
+.h_100{
+	height: 100%
+}
+.text_left{
+	text-align: left;
+}
+.text_right{
+	text-align: right;
+}
+.text_center{
+	text-align: center;
+}
+.bor_border{
+	box-sizing: border-box;
+}
+.ft22{
+	font-size: .22rem
+}
+.pr20{
+	padding-right: .2rem
+}
+.overflow{
+	overflow: hidden;
+}
+.mb25{
+	margin-bottom: .25rem
+}
+.w690{
+	width: 6.9rem  
+}
+.ml30{
+	margin-left: .3rem;
+}
+.mt15{
+	margin-bottom: .15rem
+}
+.ft24{
+	font-size: .24rem
+}
+.h85{
+	height: .85rem
+}
